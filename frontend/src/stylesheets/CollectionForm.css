@@ -1,0 +1,29 @@
+@import './main.css';
+
+.collection-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-rad);
+    background-color: var(--background-sec);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.collection-form-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+    .collection-form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        align-items: stretch;
+    }
+}

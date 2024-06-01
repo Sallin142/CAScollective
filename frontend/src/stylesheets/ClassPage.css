@@ -1,0 +1,84 @@
+@import './main.css';
+
+.class-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    padding: 2rem 0;
+    gap: 2.5rem;
+    min-width: 0;
+}
+
+.student-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: var(--border-rad);
+    background-color: var(--background-sec);
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.single-student-form {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.single-form-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.student-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 2rem;
+}
+
+.class-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-rad);
+    background-color: var(--background-sec);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.no-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.no-students {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.student-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-rad);
+    background-color: var(--background-sec);
+    padding: 1rem;
+    gap: 1rem;
+}

@@ -1,0 +1,63 @@
+@import './main.css';
+
+.csv-file-opener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+label {
+    border: none;
+    height: min-content;
+    background-color: var(--background-tri);
+    padding: 0.5rem 2rem;
+    border: 3px solid var(--background-tri);
+    border-radius: var(--border-rad);
+    cursor: pointer;
+    color: var(--color-pri);
+    font-weight: 800;
+    transition: var(--ani-transition);
+}
+
+#status {
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.file-input {
+    border: none;
+    background-color: var(--background-tri);
+    padding: .5rem 2rem;
+    border: 3px solid var(--background-tri);
+    border-radius: var(--border-rad);
+    cursor: pointer;
+    color: var(--color-pri);
+    font-weight: 800;
+    transition: var(--ani-transition);
+    display: inline-block;
+}
+  
+
+button {
+    border: none;
+    height: min-content;
+    background-color: var(--background-tri);
+    padding: .5rem 2rem;
+    border: 3px solid var(--background-tri);
+    border-radius: var(--border-rad);
+    cursor: pointer;
+    color: var(--color-pri);
+    font-weight: 800;
+    transition: var(--ani-transition);
+}
+
+.file-input input {
+    display: none;
+}
+
+.file-input:hover {
+    background-color: var(--background-sec);
+    color: var(--color-sec);
+}

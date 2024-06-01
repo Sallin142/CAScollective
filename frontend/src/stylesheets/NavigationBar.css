@@ -1,0 +1,38 @@
+@import "./main.css";
+
+
+.nav-bar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    background-color: var(--background-sec);
+}
+
+.nav-bar-left {
+    display: flex;
+}
+
+.nav-bar-right {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar-container h2 {
+    text-decoration: none;
+    padding: 1.4rem 1.6rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-bar-container h2 {
+        font-size: 1.2rem;
+        padding: 1.4rem 1rem;
+    }
+}
+
+
+
+
+

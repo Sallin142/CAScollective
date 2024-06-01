@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    animation: var(--ani-pop-in);
+}
+
+body {
+    --background-pri: #18181b;
+    --background-sec: #202023;
+    --background-tri: #28282b;
+
+    --color-pri: #fafafa;
+    --color-sec: #d4d4d8;
+    --color-tri: #888;
+    --color-quar: #555;
+
+    --border-rad: 1rem;
+
+    --ani-pop-in: pop-in 0.45s ease forwards;
+    --ani-transition: all 0.2s ease-in-out;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: var(--background-pri);
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes pop-in {
+    0% { 
+        opacity: 0;
+        transform: scale(0.99);
+    }
+    100% { 
+        opacity: 1;
+        transform: scale(1);
+    } 
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-sec);
+}
+
+h1 {
+    color: var(--color-pri);
+    font-size: 2.5rem;
+    overflow-x: auto;
+}
+
+h2 {
+    color: var(--color-sec);
+    font-size: 1.75rem;
+    overflow-x: auto;
+}
+
+h3 {
+    color: var(--color-sec);
+    font-size: 1.5rem;
+    overflow-x: auto;
+}
+
+p {
+    color: var(--color-sec);
+    white-space: pre-wrap;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 0.5rem;
+}
+
+input {
+    flex: 1;
+    min-height: 1.5rem;
+    background-color: var(--background-tri);
+    border: 3px solid var(--background-tri);
+    border-radius: var(--border-rad);
+    transition: var(--ani-transition);
+    padding: 0.25rem 0.75rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    color: var(--color-sec);
+}
+
+input::placeholder {
+    color: var(--color-sec);
+    opacity: 1;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    outline: none;
+    background-color: var(--background-sec);
+}
+
+textarea {
+    background-color: var(--background-tri);
+    color: var(--color-pri);
+    border-radius: var(--border-rad);
+    transition: var(--ani-transition);
+    padding: 0.25rem 0.75rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    resize: none;
+    border: 3px solid var(--background-tri);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: pre;
+}
+
+textarea::placeholder {
+    color: var(--color-sec);
+    opacity: 1;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+textarea:focus {
+    outline: none;
+    background-color: var(--background-sec);
+}
+
+button {
+    border: none;
+    height: min-content;
+    background-color: var(--background-tri);
+    padding: .5rem 2rem;
+    border: 3px solid var(--background-tri);
+    border-radius: var(--border-rad);
+    cursor: pointer;
+    color: var(--color-pri);
+    font-weight: 800;
+    transition: var(--ani-transition);
+}
+
+button:hover {
+    background-color: var(--background-sec);
+    color: var(--color-sec);
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 0.6rem;
+}
+  
+/* For vertical scrollbar thumb */
+*::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    background-color: var(--color-tri);
+}
+
+/* For horizontal scrollbar thumb */
+*::-webkit-scrollbar-thumb:horizontal {
+    background-color: var(--color-tri);
+    border-radius: 6px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-quar);
+}
